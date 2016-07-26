@@ -5,7 +5,7 @@ Yellow plugin that adds SkipTo-links for keyboard navigation. Uses [SkipTo.js](h
 How do I install this?
 ----------------------
 1. Download and install [Yellow](https://github.com/datenstrom/yellow/).  
-2. Download [SkipTo Plugin](https://github.com/schulle4u/), and extract it into your `system/plugins` folder.  
+2. Download [SkipTo Plugin](https://github.com/schulle4u/yellow-plugin-skipto/archive/master.zip), and extract it into your `system/plugins` folder.  
 
 To uninstall delete the plugin files.
 
