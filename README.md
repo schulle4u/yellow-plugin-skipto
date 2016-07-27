@@ -5,13 +5,22 @@ Yellow plugin that adds SkipTo-links for keyboard navigation. Uses [SkipTo.js](h
 How do I install this?
 ----------------------
 1. Download and install [Yellow](https://github.com/datenstrom/yellow/).  
-2. Download [SkipTo Plugin](https://github.com/schulle4u/yellow-plugin-skipto/archive/master.zip), and extract it into your `system/plugins` folder.  
+2. Download [SkipTo Plugin](https://github.com/schulle4u/), and extract it into your `system/plugins` folder.  
 
 To uninstall delete the plugin files.
 
 Configuration
 -------------
-Todo
+The following options are available: 
+
+* skiptoHeadings: which heading elements to show in the menu (h1, h2, h3, h4...)
+* skiptoLandmarks: ARIA landmarks (e.g. banner, navigation, main and search)
+* skiptoSections: HTML5 Section Elements (e.g. main, section[aria-label], section[aria-labelledby]
+* skiptoIds: Any element with the id specified
+* skiptoCustomClass: Any element with the custom class specified
+* skiptoAccesskey: access key to focus the menu, default is 0
+* skiptoWrap (true/false): set the menu to wrap
+* skiptoVisibility (onfocus/onload): set this to "onload" if you want the menu to be always visible 
 
 How to use the SkipTo links
 ---------------------------

@@ -21,7 +21,7 @@ class YellowSkipto
 		$this->yellow->config->setDefault("skiptoAccesskey", "0");
 		$this->yellow->config->setDefault("skiptoWrap", "false");
 		$this->yellow->config->setDefault("skiptoVisibility", "onfocus");
-		$this->yellow->config->setDefault("skiptoAttachElement", "");
+		//$this->yellow->config->setDefault("skiptoAttachElement", "");
 	}
 	
 	// Handle page extra HTML data
@@ -30,7 +30,11 @@ class YellowSkipto
 		$output = NULL;
 		if($name == "footer")
 		{
-			$output = "<script>
+			$locationJavascript = $this->yellow->config->get("serverBase").$this->yellow->config->get("pluginLocation")."SkipTo.min.js";
+			$fileNameJavascript = $this->yellow->config->get("pluginDir")."SkipTo.min.js";
+			if(is_file($fileNameJavascript)) 
+			{
+				$output = "<script>
 			var SkipToConfig =
 			{
 				\"settings\": {
@@ -44,14 +48,12 @@ class YellowSkipto
 						\"accesskey\"    : \"".$this->yellow->config->get("skiptoAccesskey")."\",
 						\"wrap\"         : \"".$this->yellow->config->get("skiptoWrap")."\",
 						\"visibility\"   : \"".$this->yellow->config->get("skiptoVisibility")."\",
-						\"attachElement\": \"".$this->yellow->config->get("skiptoAttachElement")."\"
 					}
 				}
 			};
-			</script>\n";
-			$locationJavascript = $this->yellow->config->get("serverBase").$this->yellow->config->get("pluginLocation")."SkipTo.min.js";
-			$fileNameJavascript = $this->yellow->config->get("pluginDir")."SkipTo.min.js";
-			if(is_file($fileNameJavascript)) $output .= "<script type=\"text/javascript\" src=\"$locationJavascript\"></script>\n";
+			</script>\n
+			<script type=\"text/javascript\" src=\"$locationJavascript\"></script>\n";
+			}
 		}
 		return $output;
 	}
