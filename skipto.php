@@ -5,7 +5,7 @@
 // Skipto plugin
 class YellowSkipto
 {
-	const VERSION = "0.6.4";
+	const VERSION = "0.6.5";
 	var $yellow;			//access to API
 	
 	// Handle initialisation
