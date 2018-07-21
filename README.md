@@ -4,8 +4,8 @@ Pplugin for Datenstrom Yellow that adds keyboard navigation.
 
 How do I install this?
 ----------------------
-1. [Download and install Datenstrom Yellow](https://github.com/datenstrom/yellow/)0.6.4
-2. [Download plugin](https://github.com/schulle4u/yellow-plugin-skipto/archive/master.zip). If you are using Safari, right click and select 'Download file as'.
+1. [Download and install Datenstrom Yellow](https://github.com/datenstrom/yellow/)
+2. [Download plugin](https://github.com/schulle4u/yellow-plugin-skipto/archive/master.zip). If you are using Safari, right click and select 'Download file as'
 3. Copy `master.zip` into your `system/plugins` folder.
 
 To uninstall delete the plugin files.
