@@ -1,8 +1,8 @@
 Skipto plugin 0.6.5
 ===================
-Pplugin for Datenstrom Yellow that adds keyboard navigation.
+Enhances keyboard navigation.
 
-## How do I install this?
+## How to install plugin
 
 1. [Download and install Datenstrom Yellow](https://github.com/datenstrom/yellow/)
 2. [Download plugin](https://github.com/schulle4u/yellow-plugin-skipto/archive/master.zip). If you are using Safari, right click and select 'Download file as'
@@ -10,7 +10,7 @@ Pplugin for Datenstrom Yellow that adds keyboard navigation.
 
 To uninstall delete the [plugin files](update.ini).
 
-## How to use Skipto?
+## How to use the Skipto plugin
 
 After loading a page, press the tab key and you will see a `Skip to...` button at the top of the page. Press enter or space to activate a menu containing all headings and sections on the current page. Press the up or down-arrow key to Select one of the items, press enter to directly jump to it. Pressing the accesskey 0 will focus the SkipTo button at any time. 
 
@@ -18,9 +18,9 @@ Please note that this plugin primarily is not designed to enhance accessibility 
 
 This plugin uses [SkipTo.js v2.0.0](https://paypal.github.io/skipto/) by PayPal Accessibility Team and University of Illinois. It's licensed under BSD.
 
-## How to configure Skipto?
+## How to configure the Skipto plugin
 
-The following options are available: 
+The following settings can be configured in file `system/config/config.ini`: 
 
 `skiptoHeadings` = which heading elements to show in the menu (h1, h2, h3, h4...)  
 `skiptoLandmarks` = ARIA landmarks (e.g. banner, navigation, main and search)  

@@ -1,8 +1,8 @@
 <?php
-// Copyright (c) 2013-2016 Datenstrom, http://datenstrom.se
+// Skipto plugin, https://github.com/schulle4u/yellow-plugin-skipto
+// Copyright (c) 2013-2016 Datenstrom, https://datenstrom.se
 // This file may be used and distributed under the terms of the public license.
 
-// Skipto plugin
 class YellowSkipto
 {
 	const VERSION = "0.6.5";
