@@ -1,6 +1,6 @@
 Skipto plugin 0.6.5
 ===================
-Enhances keyboard navigation.
+Enhances keyboard navigation. This plugin is obsolete for now.
 
 ## How to install plugin
 
